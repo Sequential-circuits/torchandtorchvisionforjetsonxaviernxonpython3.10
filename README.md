@@ -9,3 +9,7 @@ So, unless you want to buy a Jetson Orin, the only solution is to comnpile both 
 Also, the compiled versions have to work with one another and torch has to be compiled with CUDA (otherwise you could just do a pip install torch)
 
 So, after 2 weeks of painful testing I believe I got them right and I am giving them here, hope it suits your purpose!
+
+As the files are big and github has a limit of 25 Mb for files, I put them here:
+1 - TORCH: https://www.tekntrash.com/github/torch-2.0.0a0+gite9ebda2-cp310-cp310-linux_aarch64.whl
+2 - TORCHVISION: https://www.tekntrash.com/github/torchvision-0.16.1+fdea156-cp310-cp310-linux_aarch64.whl
