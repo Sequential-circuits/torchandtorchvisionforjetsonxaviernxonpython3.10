@@ -8,7 +8,9 @@ So, unless you want to buy a Jetson Orin, the only solution is to comnpile both 
 
 Also, the compiled versions have to work with one another and torch has to be compiled with CUDA (otherwise you could just do a pip install torch)
 
-So, after 2 weeks of painful testing I believe I got them right and I am giving them here, hope it suits your purpose!
+So, after 2 weeks of painful testing I believe I got them right and I am giving them here. Note that torchvision throws an error "UserWarning: Failed to load image Python extension: '/usr/local/lib/python3.10/dist-packages/torchvision/image.so: undefined symbol: _ZNK3c1017SymbolicShapeMeta18init_is_contiguousEv'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning", but still seems to work ok. At one point I will try to recompile it better and update it here
+
+hope it suits your purpose!
 
 As the files are big and github has a limit of 25 Mb for files, I put them here:
 
