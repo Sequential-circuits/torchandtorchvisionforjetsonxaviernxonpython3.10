@@ -2,4 +2,10 @@
 
 If you own an NVIDIA Jetson Xavier NX by now you realised you are stuck with python 3.8. In fact, only from version 6 of the jetpacks is when you will see all the libraries adapted to work on python 3.10
 
-Problem is that many of modern models that run on top of scikit-learn such as FastPitch require python 3.10, and the Torch and Torchvision they also require do not accept 
+Problem is that many of modern models that run on top of scikit-learn such as FastPitch require python 3.10, and the Torch and Torchvision they also require and which come with the jetpacks 5 are compiled for python 3.8
+
+So, unless you want to buy a Jetson Orin, the only solution is to comnpile both torch and torchvision from source after of course having installed python 3.10 and created an environment to run them
+
+Also, the compiled versions have to work with one another and torch has to be compiled with CUDA (otherwise you could just do a pip install torch)
+
+So, after 2 weeks of painful testing I believe I got them right and I am giving them here, hope it suits your purpose!
